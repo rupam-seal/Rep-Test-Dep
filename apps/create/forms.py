@@ -1,4 +1,4 @@
-from tkinter.tix import Select
+# from tkinter.tix import Select
 from ..core.models import *
 
 from django import forms
@@ -13,24 +13,24 @@ class OrderForm(ModelForm):
         model = Order
         fields = '__all__'
 
-        widgets = {
-            'customer': Select(attrs={
-                'class': "form__select-inp",
-            }),
-            'item': Select(attrs={
-                'class': "form__select-inp",
-            }),
-            'price': TextInput(attrs={
-                'class': "form__inp",
-            }),
-            'quantity': TextInput(attrs={
-                'class': "form__inp",
-            }),
-            'status': Select(attrs={
-                'class': "form__select-inp",
-            }),
+        # widgets = {
+        #     'customer': Select(attrs={
+        #         'class': "form__select-inp",
+        #     }),
+        #     'item': Select(attrs={
+        #         'class': "form__select-inp",
+        #     }),
+        #     'price': TextInput(attrs={
+        #         'class': "form__inp",
+        #     }),
+        #     'quantity': TextInput(attrs={
+        #         'class': "form__inp",
+        #     }),
+        #     'status': Select(attrs={
+        #         'class': "form__select-inp",
+        #     }),
 
-        }
+        # }
 
 
 class ItemForm(ModelForm):
@@ -46,69 +46,69 @@ class ItemForm(ModelForm):
         model = Item
         fields = '__all__'
 
-        widgets = {
-            'name': TextInput(attrs={
-                'class': "form__inp",
-            }),
-            'price': TextInput(attrs={
-                'class': "form__inp",
-            }),
-            'quantity': TextInput(attrs={
-                'class': "form__inp",
-            }),
-            'category': Select(attrs={
-                'class': "form__select-inp",
-            }),
-            'tag': Select(attrs={
-                'class': "form__select-inp",
-            }),
+        # widgets = {
+        #     'name': TextInput(attrs={
+        #         'class': "form__inp",
+        #     }),
+        #     'price': TextInput(attrs={
+        #         'class': "form__inp",
+        #     }),
+        #     'quantity': TextInput(attrs={
+        #         'class': "form__inp",
+        #     }),
+        #     'category': Select(attrs={
+        #         'class': "form__select-inp",
+        #     }),
+        #     'tag': Select(attrs={
+        #         'class': "form__select-inp",
+        #     }),
 
-        }
+        # }
 
 
 class CategoryForm(ModelForm):
     class Meta:
         model = Category
         fields = '__all__'
-        widgets = {
-            'name': TextInput(attrs={
-                'class': "form__inp",
-            }),
-            'quantity': TextInput(attrs={
-                'class': "form__inp",
-            }),
-            'status': Select(attrs={
-                'class': "form__select-inp",
-            }),
-        }
+        # widgets = {
+        #     'name': TextInput(attrs={
+        #         'class': "form__inp",
+        #     }),
+        #     'quantity': TextInput(attrs={
+        #         'class': "form__inp",
+        #     }),
+        #     'status': Select(attrs={
+        #         'class': "form__select-inp",
+        #     }),
+        # }
 
 
 class TagForm(ModelForm):
     class Meta:
         model = Tag
         fields = '__all__'
-        widgets = {
-            'name': TextInput(attrs={
-                'class': "form__inp",
-            }),
-        }
+        # widgets = {
+        #     'name': TextInput(attrs={
+        #         'class': "form__inp",
+        #     }),
+        # }
 
 
 class CustomerForm(ModelForm):
     class Meta:
         model = Customer
         fields = '__all__'
-        widgets = {
-            'name': TextInput(attrs={
-                'class': "form__inp",
-            }),
-            'email': TextInput(attrs={
-                'class': "form__inp",
-            }),
-            'phone': TextInput(attrs={
-                'class': "form__inp",
-            }),
-            'gender': Select(attrs={
-                'class': "form__select-inp",
-            }),
-        }
+        # widgets = {
+        #     'name': TextInput(attrs={
+        #         'class': "form__inp",
+        #     }),
+        #     'email': TextInput(attrs={
+        #         'class': "form__inp",
+        #     }),
+        #     'phone': TextInput(attrs={
+        #         'class': "form__inp",
+        #     }),
+        #     'gender': Select(attrs={
+        #         'class': "form__select-inp",
+        #     }),
+        # }
